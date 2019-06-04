@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="page.wrapper">
+            <block class="Tabish\RelatedProductByCategories\Block\ProductByCategory" name="related.product.category" template="Pnc_RelatedProductByCategories::related_products.phtml" after="catalog.product.related">
+                <arguments>
+                    <argument name="type" xsi:type="string">related</argument>
+                    <argument name="status" xsi:type="string">1</argument>
+                    <argument name="replace" xsi:type="string">1</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
